@@ -13,7 +13,7 @@ using Microsoft.Win32;  // 레지스트리
 
 namespace BdBoss
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
 
         DateTime NSpawn;
@@ -23,7 +23,7 @@ namespace BdBoss
         bool bCheck;
         bool bUpCheck = false;       // 창위로 버튼 눌렸을때 체크
 
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();          // 윈도우 폼 초기화
         }
@@ -34,13 +34,13 @@ namespace BdBoss
 
             NSpawn = NAng + TimeSpan.FromMinutes(30f);      // 현재시간 + 30분
 
-            label2.Text = NSpawn.ToString();                // 문자열로 바꿔서 출력
+            NSpawnTime.Text = NSpawn.ToString();                // 문자열로 바꿔서 출력
             bCheck = true;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            label1.Text = DateTime.Now.ToString();
+            RealTime.Text = DateTime.Now.ToString();
 
             if (DateTime.Now >= NSpawn && bCheck)
             {
@@ -55,26 +55,26 @@ namespace BdBoss
             simpleSound.Play();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void WindowSetBtn_Click(object sender, EventArgs e)
         {
             if (!bUpCheck)
             {
-                button1.Text = "창 위로 취소";
+                WindowSet.Text = "창 위로 취소";
                 bUpCheck = true;
                 this.TopMost = true;        // TopMost true는 윈도우 창 맨위로
             }
             else
             {
                 bUpCheck = false;
-                button1.Text = "창 위로";
+                WindowSet.Text = "창 위로";
                 this.TopMost = false;
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void StackBtn_Click(object sender, EventArgs e)
         {
-            Form2 dlg = new Form2();        // form2(강화 스택) 할당받고 아랫줄에서 실행
-            dlg.ShowDialog();
+            Form2 Stack = new Form2();        // form2(강화 스택) 할당받고 아랫줄에서 실행
+            Stack.ShowDialog();
         }
 
         private void RegisteryAdd()
@@ -98,16 +98,16 @@ namespace BdBoss
             timer1.Interval = 1000;         // 1초
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void MediaBtn_Click(object sender, EventArgs e)
         {
-            Form3 tlg = new Form3();
-            tlg.ShowDialog();
+            Form3 Media = new Form3();
+            Media.ShowDialog();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void WebPlayerBtn_Click(object sender, EventArgs e)
         {
-            Form4 flg = new Form4();
-            flg.ShowDialog();
+            Form4 Web = new Form4();
+            Web.ShowDialog();
         }
     }
 }

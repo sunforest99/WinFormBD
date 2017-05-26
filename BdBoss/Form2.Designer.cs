@@ -28,24 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.StackList = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
-            // listBox1
+            // StackList
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 12;
-            this.listBox1.Location = new System.Drawing.Point(12, 12);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(410, 232);
-            this.listBox1.TabIndex = 0;
+            this.StackList.FormattingEnabled = true;
+            this.StackList.ItemHeight = 12;
+            this.StackList.Location = new System.Drawing.Point(12, 12);
+            this.StackList.Name = "StackList";
+            this.StackList.Size = new System.Drawing.Size(410, 232);
+            this.StackList.TabIndex = 0;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(434, 261);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.StackList);
             this.Name = "Form2";
             this.Text = "강화 스택";
             this.Load += new System.EventHandler(this.Form2_Load);
@@ -55,6 +55,6 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox StackList;
     }
 }

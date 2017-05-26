@@ -17,13 +17,13 @@ namespace BdBoss
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void FindFilesBtn_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+            OpenFileDialog openFileDialog = new OpenFileDialog();
 
-            if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)       // 파일찾기 창 띄우기
+            if (openFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)       // 파일찾기 창 띄우기 그리고 확인누르면 아래롱
             {
-                axWindowsMediaPlayer1.URL = openFileDialog1.FileName;                       // 열기를 누르면 실행됨
+                WindowsMediaPlayer.URL = openFileDialog.FileName;                       // 열기를 누르면 실행됨
             }
         }
     }

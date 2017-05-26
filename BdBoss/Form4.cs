@@ -21,17 +21,17 @@ namespace BdBoss
 
         private void FormClose(object sender, FormClosingEventArgs e)
         {
-            webBrowser1.Refresh();
+            webBrowser.Refresh();       // Form4 가 꺼졌을때 웹브라우저 초기화
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void MoveBtn_Click(object sender, EventArgs e)
         {
-            webBrowser1.Navigate(textBox1.Text);
+            webBrowser.Navigate(Address.Text);      // 사이트 주소 넣어줌
         }
 
         private void Form4_Load(object sender, EventArgs e)
         {
-            System.Windows.Forms.HtmlDocument document = this.webBrowser1.Document;
+            System.Windows.Forms.HtmlDocument document = this.webBrowser.Document;  // 자바스크립트 개객기
             //InternetExplorer ex = new InternetExplorer();
             //ex.Visible = true;
             //ex.Navigate("ani.today");

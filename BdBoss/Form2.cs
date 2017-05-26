@@ -20,12 +20,12 @@ namespace BdBoss
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            Encoding encode = System.Text.Encoding.GetEncoding("ks_c_5601-1987");
-            StreamReader sr = new StreamReader("Stack.txt", encode);
-            String line;
-            while ((line = sr.ReadLine()) != null)
+            Encoding encode = System.Text.Encoding.GetEncoding("ks_c_5601-1987");       // 한글깨짐으로 인코딩 해주기
+            StreamReader sr = new StreamReader(@"./Stack.txt", encode);
+            String sline;
+            while ((sline = sr.ReadLine()) != null)      // 파일이 끝날때까징
             {
-                listBox1.Items.Add(line);
+                StackList.Items.Add(sline);              // 계속 추가아아아아ㅏ아
             }
         }
     }
