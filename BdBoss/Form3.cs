@@ -26,5 +26,11 @@ namespace BdBoss
                 WindowsMediaPlayer.URL = openFileDialog.FileName;                       // 열기를 누르면 실행됨
             }
         }
+
+        private void FormClose(object sender, FormClosedEventArgs e)
+        {
+            WindowsMediaPlayer.close();
+            WindowsMediaPlayer.Refresh();
+        }
     }
 }
