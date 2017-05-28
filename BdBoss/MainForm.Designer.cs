@@ -37,11 +37,13 @@
             this.Stack = new System.Windows.Forms.Button();
             this.Media = new System.Windows.Forms.Button();
             this.WebPlayer = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Refresh = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Nbtn
             // 
-            this.Nbtn.Location = new System.Drawing.Point(106, 140);
+            this.Nbtn.Location = new System.Drawing.Point(136, 119);
             this.Nbtn.Name = "Nbtn";
             this.Nbtn.Size = new System.Drawing.Size(75, 23);
             this.Nbtn.TabIndex = 0;
@@ -113,11 +115,32 @@
             this.WebPlayer.UseVisualStyleBackColor = true;
             this.WebPlayer.Click += new System.EventHandler(this.WebPlayerBtn_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(36, 162);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 12);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "label1";
+            // 
+            // Refresh
+            // 
+            this.Refresh.Location = new System.Drawing.Point(136, 224);
+            this.Refresh.Name = "Refresh";
+            this.Refresh.Size = new System.Drawing.Size(75, 23);
+            this.Refresh.TabIndex = 9;
+            this.Refresh.Text = "새로고침";
+            this.Refresh.UseVisualStyleBackColor = true;
+            this.Refresh.Click += new System.EventHandler(this.Refresh_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(364, 201);
+            this.ClientSize = new System.Drawing.Size(364, 276);
+            this.Controls.Add(this.Refresh);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.WebPlayer);
             this.Controls.Add(this.Media);
             this.Controls.Add(this.Stack);
@@ -127,7 +150,7 @@
             this.Controls.Add(this.Nbtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MainForm";
-            this.Text = "누베 젠타임";
+            this.Text = "보스 젠타임";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -144,6 +167,8 @@
         private System.Windows.Forms.Button Stack;
         private System.Windows.Forms.Button Media;
         private System.Windows.Forms.Button WebPlayer;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button Refresh;
     }
 }
 

@@ -10,12 +10,13 @@ using System.Windows.Forms;
 using System.Media;     // 소리
 using System.IO;        // 파일위치
 using Microsoft.Win32;  // 레지스트리
+using System.Net;
 
 namespace BdBoss
 {
     public partial class MainForm : Form
     {
-
+        string returnStr;
         DateTime NSpawn;
 
         DateTime NAng;
@@ -96,6 +97,8 @@ namespace BdBoss
 
             timer1.Start();                 // 타이머
             timer1.Interval = 1000;         // 1초
+            returnStr = HttpGet("http://lazytitan.dothome.co.kr/Output.php");
+            label1.Text = returnStr;
         }
 
         private void MediaBtn_Click(object sender, EventArgs e)
@@ -108,6 +111,21 @@ namespace BdBoss
         {
             Form4 Web = new Form4();
             Web.ShowDialog();
+        }
+        private string HttpGet(string urlStr)
+        {
+            WebRequest request = WebRequest.Create(urlStr);
+            WebResponse response = request.GetResponse();
+
+            Stream dataStream = response.GetResponseStream();
+            StreamReader reader = new StreamReader(dataStream);
+            return reader.ReadToEnd().Trim();
+        }
+
+        private void Refresh_Click(object sender, EventArgs e)
+        {
+            returnStr = HttpGet("http://lazytitan.dothome.co.kr/Output.php");
+            label1.Text = returnStr;
         }
     }
 }
