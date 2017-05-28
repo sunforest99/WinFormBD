@@ -118,7 +118,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(36, 162);
+            this.label1.Location = new System.Drawing.Point(36, 151);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 12);
             this.label1.TabIndex = 8;
@@ -126,7 +126,7 @@
             // 
             // Refresh
             // 
-            this.Refresh.Location = new System.Drawing.Point(136, 224);
+            this.Refresh.Location = new System.Drawing.Point(136, 241);
             this.Refresh.Name = "Refresh";
             this.Refresh.Size = new System.Drawing.Size(75, 23);
             this.Refresh.TabIndex = 9;
