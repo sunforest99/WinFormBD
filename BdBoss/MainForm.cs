@@ -75,7 +75,7 @@ namespace BdBoss
         private void StackBtn_Click(object sender, EventArgs e)
         {
             Form2 Stack = new Form2();        // form2(강화 스택) 할당받고 아랫줄에서 실행
-            Stack.ShowDialog();
+            Stack.Show();
         }
 
         private void RegisteryAdd()
@@ -104,13 +104,13 @@ namespace BdBoss
         private void MediaBtn_Click(object sender, EventArgs e)
         {
             Form3 Media = new Form3();
-            Media.ShowDialog();
+            Media.Show();
         }
 
         private void WebPlayerBtn_Click(object sender, EventArgs e)
         {
             Form4 Web = new Form4();
-            Web.ShowDialog();
+            Web.Show();
         }
         private string HttpGet(string urlStr)
         {
