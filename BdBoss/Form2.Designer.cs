@@ -38,7 +38,7 @@
             this.StackList.Location = new System.Drawing.Point(12, 12);
             this.StackList.Name = "StackList";
             this.StackList.Size = new System.Drawing.Size(410, 232);
-            this.StackList.TabIndex = 0;
+            this.StackList.TabIndex = 1;
             // 
             // Form2
             // 

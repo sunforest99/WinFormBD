@@ -149,9 +149,11 @@
             this.Controls.Add(this.RealTime);
             this.Controls.Add(this.Nbtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.KeyPreview = true;
             this.Name = "MainForm";
             this.Text = "보스 젠타임";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Keydown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -16,6 +16,7 @@ namespace BdBoss
 {
     public partial class MainForm : Form
     {
+        bool bEnableCheck;
         string returnStr;
         DateTime NSpawn;
 
@@ -23,6 +24,10 @@ namespace BdBoss
 
         bool bCheck;
         bool bUpCheck = false;       // 창위로 버튼 눌렸을때 체크
+
+        Form2 StackForm;
+        Form3 MediaForm;
+        Form4 WebForm;
 
         public MainForm()
         {
@@ -74,8 +79,8 @@ namespace BdBoss
 
         private void StackBtn_Click(object sender, EventArgs e)
         {
-            Form2 Stack = new Form2();        // form2(강화 스택) 할당받고 아랫줄에서 실행
-            Stack.Show();
+            StackForm = new Form2();        // form2(강화 스택) 할당받고 아랫줄에서 실행
+            StackForm.Show();
         }
 
         private void RegisteryAdd()
@@ -103,14 +108,14 @@ namespace BdBoss
 
         private void MediaBtn_Click(object sender, EventArgs e)
         {
-            Form3 Media = new Form3();
-            Media.Show();
+            MediaForm = new Form3();
+            MediaForm.Show();
         }
 
         private void WebPlayerBtn_Click(object sender, EventArgs e)
         {
-            Form4 Web = new Form4();
-            Web.Show();
+            WebForm = new Form4();
+            WebForm.Show();
         }
         private string HttpGet(string urlStr)
         {
@@ -126,6 +131,26 @@ namespace BdBoss
         {
             returnStr = HttpGet("http://lazytitan.dothome.co.kr/Output.php");
             label1.Text = returnStr;
+        }
+
+        private void Keydown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F12 && !bEnableCheck)
+            {
+                this.Enabled = false;
+                StackForm.Enabled = false;
+                MediaForm.Enabled = false;
+                WebForm.Enabled = false;
+                bEnableCheck = true;
+            }
+            else if (e.KeyCode == Keys.F12 && bEnableCheck)
+            {
+                this.Enabled = true;
+                StackForm.Enabled = true;
+                MediaForm.Enabled = true;
+                WebForm.Enabled = true;
+                bEnableCheck = false;
+            }
         }
     }
 }
