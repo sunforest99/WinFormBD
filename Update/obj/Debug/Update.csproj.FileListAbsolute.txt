@@ -1,0 +1,9 @@
+C:\Users\kisun\Desktop\sia\BdBoss\Update\bin\Debug\Update.exe.config
+C:\Users\kisun\Desktop\sia\BdBoss\Update\bin\Debug\Update.exe
+C:\Users\kisun\Desktop\sia\BdBoss\Update\bin\Debug\Update.pdb
+C:\Users\kisun\Desktop\sia\BdBoss\Update\obj\Debug\Update.csprojResolveAssemblyReference.cache
+C:\Users\kisun\Desktop\sia\BdBoss\Update\obj\Debug\Update.Properties.Resources.resources
+C:\Users\kisun\Desktop\sia\BdBoss\Update\obj\Debug\Update.Update.resources
+C:\Users\kisun\Desktop\sia\BdBoss\Update\obj\Debug\Update.csproj.GenerateResource.Cache
+C:\Users\kisun\Desktop\sia\BdBoss\Update\obj\Debug\Update.exe
+C:\Users\kisun\Desktop\sia\BdBoss\Update\obj\Debug\Update.pdb

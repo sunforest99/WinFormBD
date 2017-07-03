@@ -27,6 +27,6 @@ namespace BdBoss
             {
                 StackList.Items.Add(sline);              // 계속 추가아아아아ㅏ아
             }
-        }
+         }
     }
 }

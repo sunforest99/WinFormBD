@@ -11,23 +11,21 @@ using System.Media;     // 소리
 using System.IO;        // 파일위치
 using Microsoft.Win32;  // 레지스트리
 using System.Net;
+using System.Diagnostics;
 
 namespace BdBoss
 {
     public partial class MainForm : Form
     {
-        bool bEnableCheck;
-        string returnStr;
-        DateTime NSpawn;
+        private string returnStr;
+        private DateTime NSpawn;
 
-        DateTime NAng;
+        private DateTime NAng;
 
-        bool bCheck;
-        bool bUpCheck = false;       // 창위로 버튼 눌렸을때 체크
+        private bool bCheck;
+        private bool bUpCheck;       // 창위로 버튼 눌렸을때 체크
 
-        Form2 StackForm;
-        Form3 MediaForm;
-        Form4 WebForm;
+        string sWebSite = "http://lazytitan.dothome.co.kr/BdBossPhp/";
 
         public MainForm()
         {
@@ -79,8 +77,7 @@ namespace BdBoss
 
         private void StackBtn_Click(object sender, EventArgs e)
         {
-            StackForm = new Form2();        // form2(강화 스택) 할당받고 아랫줄에서 실행
-            StackForm.Show();
+            FormScrp.I.CreateStack();       // form2(강화 스택) 할당받고 아랫줄에서 실행
         }
 
         private void RegisteryAdd()
@@ -94,28 +91,35 @@ namespace BdBoss
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            String strFolder = System.IO.Directory.GetCurrentDirectory();       // 현제 파일위치 출력
+            //String strFolder = System.IO.Directory.GetCurrentDirectory();       // 현제 파일위치 출력
 
+            //Process.Start(System.IO.Directory.GetCurrentDirectory() + "/Update.exe");
             //RegisteryAdd();                 // 레지스트리 등록
 
-            MessageBox.Show(strFolder);     // 메시지 박스
+            //MessageBox.Show(strFolder);     // 메시지 박스
 
             timer1.Start();                 // 타이머
             timer1.Interval = 1000;         // 1초
-            returnStr = HttpGet("http://lazytitan.dothome.co.kr/Output.php");
-            label1.Text = returnStr;
+
+            try
+            {
+                returnStr = HttpGet(sWebSite + "Output.php");
+                label1.Text = returnStr;
+            }
+            catch
+            {
+                label1.Text = "인터넷 오류";
+            }
         }
 
         private void MediaBtn_Click(object sender, EventArgs e)
         {
-            MediaForm = new Form3();
-            MediaForm.Show();
+            FormScrp.I.CreateMedia();
         }
 
         private void WebPlayerBtn_Click(object sender, EventArgs e)
         {
-            WebForm = new Form4();
-            WebForm.Show();
+            FormScrp.I.CreateWeb();
         }
         private string HttpGet(string urlStr)
         {
@@ -129,27 +133,30 @@ namespace BdBoss
 
         private void Refresh_Click(object sender, EventArgs e)
         {
-            returnStr = HttpGet("http://lazytitan.dothome.co.kr/Output.php");
-            label1.Text = returnStr;
+            try
+            {
+                returnStr = HttpGet(sWebSite + "Output.php");
+                label1.Text = returnStr;
+            }
+            catch
+            {
+                label1.Text = "인터넷 오류";
+            }
         }
 
         private void Keydown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.F12 && !bEnableCheck)
+            if (e.KeyCode == Keys.F12 && !FormScrp.I.bEnablecheck)
             {
                 this.Enabled = false;
-                StackForm.Enabled = false;
-                MediaForm.Enabled = false;
-                WebForm.Enabled = false;
-                bEnableCheck = true;
+                FormScrp.I.ButtonOff();
+                FormScrp.I.bEnablecheck = true;
             }
-            else if (e.KeyCode == Keys.F12 && bEnableCheck)
+            else if (e.KeyCode == Keys.F12 && FormScrp.I.bEnablecheck)
             {
                 this.Enabled = true;
-                StackForm.Enabled = true;
-                MediaForm.Enabled = true;
-                WebForm.Enabled = true;
-                bEnableCheck = false;
+                FormScrp.I.ButtonOn();
+                FormScrp.I.bEnablecheck = false;
             }
         }
     }
