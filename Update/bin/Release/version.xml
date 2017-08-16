@@ -3,16 +3,16 @@
 <datafile>
     <file>
         <name>BdBoss.exe</name>
-        <version>1.0.0.2</version>
+        <version>0.0.0.0</version>
     </file>
 
     <file>
         <name>Stack.txt</name>
-        <version>1.0.0.0</version>
+        <version>0.0.0.0</version>
     </file>
 
     <file>
         <name>warring.wav</name>
-        <version>1.0.0.0</version>
+        <version>0.0.0.0</version>
     </file>
 </datafile>

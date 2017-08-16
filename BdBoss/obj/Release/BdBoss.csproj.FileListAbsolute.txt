@@ -16,3 +16,4 @@ C:\Users\kisun\Desktop\sia\BdBoss\BdBoss\obj\Release\BdBoss.csproj.GenerateResou
 C:\Users\kisun\Desktop\sia\BdBoss\BdBoss\obj\Release\BdBoss.exe
 C:\Users\kisun\Desktop\sia\BdBoss\BdBoss\obj\Release\BdBoss.pdb
 C:\Users\kisun\Desktop\sia\BdBoss\BdBoss\obj\Release\BdBoss.csprojResolveAssemblyReference.cache
+C:\Users\kisun\Desktop\sia\BdBoss\BdBoss\bin\Release\MaterialSkin.dll

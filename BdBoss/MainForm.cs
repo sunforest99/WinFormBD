@@ -15,12 +15,10 @@ using System.Diagnostics;
 
 namespace BdBoss
 {
-    public partial class MainForm : Form
+    public partial class MainForm : MaterialSkin.Controls.MaterialForm
     {
         private string returnStr;
         private DateTime NSpawn;
-
-        private DateTime NAng;
 
         private bool bCheck;
         private bool bUpCheck;       // 창위로 버튼 눌렸을때 체크
@@ -34,9 +32,7 @@ namespace BdBoss
 
         private void Nbtn_Click(object sender, EventArgs e)
         {
-            NAng = DateTime.Now;
-
-            NSpawn = NAng + TimeSpan.FromMinutes(30f);      // 현재시간 + 30분
+            NSpawn = DateTime.Now + TimeSpan.FromMinutes(30f);      // 현재시간 + 30분
 
             NSpawnTime.Text = NSpawn.ToString();                // 문자열로 바꿔서 출력
             bCheck = true;

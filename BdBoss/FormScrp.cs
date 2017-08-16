@@ -17,7 +17,6 @@ namespace BdBoss
                 if (_Instance == null)
                 {
                     _Instance = new FormScrp();
-                    Console.WriteLine("instance is null");
                 }
                 return _Instance;
             }

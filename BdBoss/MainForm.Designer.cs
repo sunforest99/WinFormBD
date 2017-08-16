@@ -43,7 +43,7 @@
             // 
             // Nbtn
             // 
-            this.Nbtn.Location = new System.Drawing.Point(136, 119);
+            this.Nbtn.Location = new System.Drawing.Point(142, 198);
             this.Nbtn.Name = "Nbtn";
             this.Nbtn.Size = new System.Drawing.Size(75, 23);
             this.Nbtn.TabIndex = 0;
@@ -58,8 +58,9 @@
             // RealTime
             // 
             this.RealTime.AutoSize = true;
+            this.RealTime.BackColor = System.Drawing.SystemColors.Window;
             this.RealTime.Font = new System.Drawing.Font("Gulim", 14F);
-            this.RealTime.Location = new System.Drawing.Point(34, 38);
+            this.RealTime.Location = new System.Drawing.Point(40, 117);
             this.RealTime.Name = "RealTime";
             this.RealTime.Size = new System.Drawing.Size(85, 19);
             this.RealTime.TabIndex = 1;
@@ -68,8 +69,9 @@
             // NSpawnTime
             // 
             this.NSpawnTime.AutoSize = true;
+            this.NSpawnTime.BackColor = System.Drawing.SystemColors.Window;
             this.NSpawnTime.Font = new System.Drawing.Font("Gulim", 14F);
-            this.NSpawnTime.Location = new System.Drawing.Point(34, 82);
+            this.NSpawnTime.Location = new System.Drawing.Point(40, 161);
             this.NSpawnTime.Name = "NSpawnTime";
             this.NSpawnTime.Size = new System.Drawing.Size(129, 19);
             this.NSpawnTime.TabIndex = 2;
@@ -77,7 +79,7 @@
             // 
             // WindowSet
             // 
-            this.WindowSet.Location = new System.Drawing.Point(4, 12);
+            this.WindowSet.Location = new System.Drawing.Point(10, 79);
             this.WindowSet.Name = "WindowSet";
             this.WindowSet.Size = new System.Drawing.Size(96, 23);
             this.WindowSet.TabIndex = 4;
@@ -87,7 +89,7 @@
             // 
             // Stack
             // 
-            this.Stack.Location = new System.Drawing.Point(278, 12);
+            this.Stack.Location = new System.Drawing.Point(284, 79);
             this.Stack.Name = "Stack";
             this.Stack.Size = new System.Drawing.Size(75, 23);
             this.Stack.TabIndex = 5;
@@ -97,7 +99,7 @@
             // 
             // Media
             // 
-            this.Media.Location = new System.Drawing.Point(106, 12);
+            this.Media.Location = new System.Drawing.Point(112, 79);
             this.Media.Name = "Media";
             this.Media.Size = new System.Drawing.Size(85, 23);
             this.Media.TabIndex = 6;
@@ -107,7 +109,7 @@
             // 
             // WebPlayer
             // 
-            this.WebPlayer.Location = new System.Drawing.Point(197, 12);
+            this.WebPlayer.Location = new System.Drawing.Point(203, 79);
             this.WebPlayer.Name = "WebPlayer";
             this.WebPlayer.Size = new System.Drawing.Size(75, 23);
             this.WebPlayer.TabIndex = 7;
@@ -118,7 +120,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(36, 151);
+            this.label1.BackColor = System.Drawing.SystemColors.Window;
+            this.label1.Location = new System.Drawing.Point(42, 230);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 12);
             this.label1.TabIndex = 8;
@@ -126,7 +129,7 @@
             // 
             // Refresh
             // 
-            this.Refresh.Location = new System.Drawing.Point(136, 241);
+            this.Refresh.Location = new System.Drawing.Point(142, 320);
             this.Refresh.Name = "Refresh";
             this.Refresh.Size = new System.Drawing.Size(75, 23);
             this.Refresh.TabIndex = 9;
@@ -138,7 +141,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(364, 276);
+            this.ClientSize = new System.Drawing.Size(387, 354);
             this.Controls.Add(this.Refresh);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.WebPlayer);
@@ -148,7 +151,7 @@
             this.Controls.Add(this.NSpawnTime);
             this.Controls.Add(this.RealTime);
             this.Controls.Add(this.Nbtn);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.KeyPreview = true;
             this.Name = "MainForm";
             this.Text = "보스 젠타임";
