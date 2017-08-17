@@ -129,7 +129,7 @@
             // 
             // Refresh
             // 
-            this.Refresh.Location = new System.Drawing.Point(142, 320);
+            this.Refresh.Location = new System.Drawing.Point(142, 319);
             this.Refresh.Name = "Refresh";
             this.Refresh.Size = new System.Drawing.Size(75, 23);
             this.Refresh.TabIndex = 9;

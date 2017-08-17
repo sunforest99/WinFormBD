@@ -35,7 +35,7 @@
             // 
             this.StackList.FormattingEnabled = true;
             this.StackList.ItemHeight = 12;
-            this.StackList.Location = new System.Drawing.Point(12, 12);
+            this.StackList.Location = new System.Drawing.Point(12, 78);
             this.StackList.Name = "StackList";
             this.StackList.Size = new System.Drawing.Size(410, 232);
             this.StackList.TabIndex = 1;
@@ -44,7 +44,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(434, 261);
+            this.ClientSize = new System.Drawing.Size(435, 325);
             this.Controls.Add(this.StackList);
             this.Name = "Form2";
             this.Text = "강화 스택";

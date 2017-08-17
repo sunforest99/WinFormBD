@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace BdBoss
 {
-    public partial class Form2 : Form
+    public partial class Form2 : MaterialSkin.Controls.MaterialForm
     {
         public Form2()
         {
