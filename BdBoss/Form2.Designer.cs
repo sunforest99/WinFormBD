@@ -47,7 +47,7 @@
             this.ClientSize = new System.Drawing.Size(435, 325);
             this.Controls.Add(this.StackList);
             this.Name = "Form2";
-            this.Text = "강화 스택";
+            this.Text = "Stack";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
 

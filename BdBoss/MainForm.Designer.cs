@@ -154,7 +154,7 @@
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.KeyPreview = true;
             this.Name = "MainForm";
-            this.Text = "보스 젠타임";
+            this.Text = "World Boss";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Keydown);
             this.ResumeLayout(false);

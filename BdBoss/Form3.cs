@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace BdBoss
 {
-    public partial class Form3 : Form
+    public partial class Form3 : MaterialSkin.Controls.MaterialForm
     {
         public Form3()
         {

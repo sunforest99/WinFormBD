@@ -37,7 +37,7 @@
             // WindowsMediaPlayer
             // 
             this.WindowsMediaPlayer.Enabled = true;
-            this.WindowsMediaPlayer.Location = new System.Drawing.Point(3, 1);
+            this.WindowsMediaPlayer.Location = new System.Drawing.Point(12, 76);
             this.WindowsMediaPlayer.Name = "WindowsMediaPlayer";
             this.WindowsMediaPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("WindowsMediaPlayer.OcxState")));
             this.WindowsMediaPlayer.Size = new System.Drawing.Size(281, 261);
@@ -45,7 +45,7 @@
             // 
             // FindFiles
             // 
-            this.FindFiles.Location = new System.Drawing.Point(290, 12);
+            this.FindFiles.Location = new System.Drawing.Point(299, 87);
             this.FindFiles.Name = "FindFiles";
             this.FindFiles.Size = new System.Drawing.Size(82, 23);
             this.FindFiles.TabIndex = 5;
@@ -57,11 +57,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(384, 261);
+            this.ClientSize = new System.Drawing.Size(390, 350);
             this.Controls.Add(this.FindFiles);
             this.Controls.Add(this.WindowsMediaPlayer);
             this.Name = "Form3";
-            this.Text = "Form3";
+            this.Text = "Media";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormClose);
             ((System.ComponentModel.ISupportInitialize)(this.WindowsMediaPlayer)).EndInit();
             this.ResumeLayout(false);
