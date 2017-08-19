@@ -36,7 +36,7 @@
             // 
             // Address
             // 
-            this.Address.Location = new System.Drawing.Point(56, 6);
+            this.Address.Location = new System.Drawing.Point(60, 84);
             this.Address.Name = "Address";
             this.Address.Size = new System.Drawing.Size(300, 21);
             this.Address.TabIndex = 1;
@@ -44,7 +44,8 @@
             // label
             // 
             this.label.AutoSize = true;
-            this.label.Location = new System.Drawing.Point(12, 9);
+            this.label.BackColor = System.Drawing.SystemColors.Window;
+            this.label.Location = new System.Drawing.Point(16, 87);
             this.label.Name = "label";
             this.label.Size = new System.Drawing.Size(29, 12);
             this.label.TabIndex = 2;
@@ -52,7 +53,7 @@
             // 
             // Move
             // 
-            this.Move.Location = new System.Drawing.Point(362, 4);
+            this.Move.Location = new System.Drawing.Point(366, 82);
             this.Move.Name = "Move";
             this.Move.Size = new System.Drawing.Size(75, 23);
             this.Move.TabIndex = 3;
@@ -62,7 +63,7 @@
             // 
             // webBrowser
             // 
-            this.webBrowser.Location = new System.Drawing.Point(0, 43);
+            this.webBrowser.Location = new System.Drawing.Point(12, 111);
             this.webBrowser.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser.Name = "webBrowser";
             this.webBrowser.ScriptErrorsSuppressed = true;
@@ -73,14 +74,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(754, 450);
+            this.ClientSize = new System.Drawing.Size(776, 533);
             this.Controls.Add(this.webBrowser);
             this.Controls.Add(this.Move);
             this.Controls.Add(this.label);
             this.Controls.Add(this.Address);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Form4";
-            this.Text = "Form4";
+            this.Text = "Web Player";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormClose);
             this.Load += new System.EventHandler(this.Form4_Load);
             this.ResumeLayout(false);

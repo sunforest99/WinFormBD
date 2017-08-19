@@ -6,3 +6,4 @@ C:\Users\kisun\Desktop\sia\BdBoss\Update\obj\Release\Update.Update.resources
 C:\Users\kisun\Desktop\sia\BdBoss\Update\obj\Release\Update.csproj.GenerateResource.Cache
 C:\Users\kisun\Desktop\sia\BdBoss\Update\obj\Release\Update.exe
 C:\Users\kisun\Desktop\sia\BdBoss\Update\obj\Release\Update.pdb
+C:\Users\kisun\Desktop\sia\BdBoss\Update\obj\Release\Update.csprojResolveAssemblyReference.cache

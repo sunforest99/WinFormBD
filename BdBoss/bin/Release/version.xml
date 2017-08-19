@@ -3,16 +3,16 @@
 <datafile>
     <file>
         <name>BdBoss</name>
-        <version>1.0.0.0</version>
+        <version>1.0.1</version>
     </file>
 
     <file>
         <name>Stack</name>
-        <version>1.0.0.0</version>
+        <version>1.0.0</version>
     </file>
 
     <file>
         <name>warring</name>
-        <version>1.0.0.0</version>
+        <version>1.0.0</version>
     </file>
 </datafile>

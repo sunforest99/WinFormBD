@@ -12,7 +12,7 @@ using SHDocVw;
 
 namespace BdBoss
 {
-    public partial class Form4 : Form
+    public partial class Form4 : MaterialSkin.Controls.MaterialForm
     {
         public Form4()
         {
