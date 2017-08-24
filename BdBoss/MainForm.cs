@@ -80,17 +80,17 @@ namespace BdBoss
         {
             RegistryKey rkey = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);     // 레지스트리 등록 키
 
-            //rkey.SetValue("BdBoss", Application.ExecutablePath.ToString());         // 레지스트리 키 이름
-            //rkey.DeleteValue("ProgramName");
+            rkey.SetValue("BdBoss", Application.ExecutablePath.ToString());         // 레지스트리 키 이름
+            rkey.DeleteValue("ProgramName");
             rkey.Close();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //String strFolder = System.IO.Directory.GetCurrentDirectory();       // 현제 파일위치 출력
+            // String strFolder = System.IO.Directory.GetCurrentDirectory();       // 현제 파일위치 출력
 
-            //Process.Start(System.IO.Directory.GetCurrentDirectory() + "/Update.exe");
-            //RegisteryAdd();                 // 레지스트리 등록
+            Process.Start(System.IO.Directory.GetCurrentDirectory() + "/Update.exe");
+            RegisteryAdd();                 // 레지스트리 등록
 
             //MessageBox.Show(strFolder);     // 메시지 박스
 
